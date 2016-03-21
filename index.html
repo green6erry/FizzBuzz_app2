@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FizzBuzz App</title>
+	<style>body {text-align: center;} li {list-style-type: none; line-height: 200%;}</style>
+
+</head>
+<body>
+
+<h1>Fizz Buzz App!</h1>
+<ul>
+<script>
+		for (var i = 1; i <=100; i++) {
+  var value;
+  
+    if (i%3 === 0 && i%5 === 0) {
+        value = "FizzBuzz";
+    }
+    else if (i%3 === 0 && i%5 !== 0) {
+        value = "Fizz";
+    }
+    else if (i%3 !== 0 && i%5 === 0) {
+       value = "Buzz";
+    }
+    else {
+        value=i;
+    }
+    
+    document.write('<li>'+value+'</li>');
+}
+	</script>
+	</ul>
+</body>
+</html>
